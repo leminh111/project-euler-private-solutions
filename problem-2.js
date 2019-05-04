@@ -1,13 +1,13 @@
-const helpers = require('./helpers');
+const { isSmallerThan, sumEvenNumbers } = require('./helpers');
 
 function generateFibToMax(maxFib) {
     const fib = [1, 2];
     let lastIndex = 1;
 
-    while (helpers.isSmallerThan(fib[lastIndex], maxFib)) {
+    while (isSmallerThan(fib[lastIndex], maxFib)) {
         const nextFib = fib[lastIndex - 1] + fib[lastIndex];
 
-        if (!helpers.isSmallerThan(nextFib, maxFib)) break;
+        if (!isSmallerThan(nextFib, maxFib)) break;
 
         fib.push(nextFib);
         lastIndex++;
@@ -16,9 +16,9 @@ function generateFibToMax(maxFib) {
     return fib;
 }
 
-function getResult (maxFib) {
+function getSumEvenFibonacciNumbers (maxFib) {
     const fibTillMaxFib = generateFibToMax(maxFib);
-    return helpers.sumEvenNumbers(fibTillMaxFib);
+    return sumEvenNumbers(fibTillMaxFib);
 }
 
-module.exports = { generateFibToMax, getResult };
+module.exports = { generateFibToMax, getSumEvenFibonacciNumbers };
