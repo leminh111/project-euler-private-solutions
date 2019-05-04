@@ -1,0 +1,23 @@
+{
+  "name": "project-euler-private-solutions",
+  "version": "1.0.0",
+  "description": "My own solutions in javascript for project euler problems, for future reference",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leminh111/project-euler-private-solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leminh111/project-euler-private-solutions/issues"
+  },
+  "homepage": "https://github.com/leminh111/project-euler-private-solutions#readme"
+}
